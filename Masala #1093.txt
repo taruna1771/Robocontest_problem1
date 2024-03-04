@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+c=a+b
+if(c>=24):
+    c=c-24
+print(c%24)

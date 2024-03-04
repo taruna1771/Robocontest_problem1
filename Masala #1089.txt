@@ -1,0 +1,235 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        long bb=scan.nextLong();
+        String a = String.valueOf(bb);
+        String txt="";
+        boolean dd=false;
+        //13-xona
+      if(a.length()<=12)
+      {
+          if(a.length()>=12)
+          {
+              switch (a.charAt(a.length()-12))
+              {
+                  case '1': txt+="bir yuz "; dd=true; break;
+                  case '2': txt+="ikki yuz ";dd=true; break;
+                  case '3': txt+="uch yuz ";dd=true; break;
+                  case '4': txt+="to'rt yuz ";dd=true; break;
+                  case '5': txt+="besh yuz ";dd=true; break;
+                  case '6': txt+="olti yuz ";dd=true; break;
+                  case '7': txt+="yetti yuz ";dd=true; break;
+                  case '8': txt+="sakkiz yuz ";dd=true; break;
+                  case '9': txt+="to'qqiz yuz ";dd=true; break;
+              }
+          }
+          //12-xona
+          if(a.length()>=11)
+          {
+              switch (a.charAt(a.length()-11))
+              {
+                  case '1': txt+="o'n ";dd=true; break;
+                  case '2': txt+="yigirma ";dd=true; break;
+                  case '3': txt+="o'ttiz ";dd=true; break;
+                  case '4': txt+="qirq ";dd=true; break;
+                  case '5': txt+="ellik ";dd=true; break;
+                  case '6': txt+="oltmish ";dd=true; break;
+                  case '7': txt+="yetmish ";dd=true; break;
+                  case '8': txt+="sakson ";dd=true; break;
+                  case '9': txt+="to'qson ";dd=true; break;
+              }
+          }
+          //11-xona
+          if(a.length()>=10)
+          {
+              switch (a.charAt(a.length()-10))
+              {
+                  case '1': txt+="bir milliard "; break;
+                  case '2': txt+="ikki milliard "; break;
+                  case '3': txt+="uch milliard "; break;
+                  case '4': txt+="to'rt milliard "; break;
+                  case '5': txt+="besh milliard "; break;
+                  case '6': txt+="olti milliard "; break;
+                  case '7': txt+="yetti milliard "; break;
+                  case '8': txt+="sakkiz milliard "; break;
+                  case '9': txt+="to'qqiz milliard "; break;
+                  default:  if(dd)
+                  {
+                      txt+="milliard ";
+                  }
+                      break;
+
+
+              }
+          }
+          dd=false;
+          //10-xona
+          if(a.length()>=9)
+          {
+              switch (a.charAt(a.length()-9))
+              {
+                  case '1': txt+="bir yuz ";dd=true; break;
+                  case '2': txt+="ikki yuz ";dd=true; break;
+                  case '3': txt+="uch yuz ";dd=true; break;
+                  case '4': txt+="to'rt yuz ";dd=true; break;
+                  case '5': txt+="besh yuz ";dd=true; break;
+                  case '6': txt+="olti yuz ";dd=true; break;
+                  case '7': txt+="yetti yuz ";dd=true; break;
+                  case '8': txt+="sakkiz yuz ";dd=true; break;
+                  case '9': txt+="to'qqiz yuz ";dd=true; break;
+              }
+          }
+          //9-xona
+          if(a.length()>=8)
+          {
+              switch (a.charAt(a.length()-8))
+              {
+                  case '1': txt+="o’n ";dd=true; break;
+                  case '2': txt+="yigirma ";dd=true; break;
+                  case '3': txt+="o'ttiz ";dd=true; break;
+                  case '4': txt+="qirq ";dd=true; break;
+                  case '5': txt+="ellik ";dd=true; break;
+                  case '6': txt+="oltmish ";dd=true; break;
+                  case '7': txt+="yetmish ";dd=true; break;
+                  case '8': txt+="sakson ";dd=true; break;
+                  case '9': txt+="to'qson ";dd=true; break;
+              }
+          }
+          //8-xona
+          if(a.length()>=7)
+          {
+              switch (a.charAt(a.length()-7))
+              {
+                  case '1': txt+="bir million "; break;
+                  case '2': txt+="ikki million "; break;
+                  case '3': txt+="uch million "; break;
+                  case '4': txt+="to'rt million "; break;
+                  case '5': txt+="besh million "; break;
+                  case '6': txt+="olti million "; break;
+                  case '7': txt+="yetti million "; break;
+                  case '8': txt+="sakkiz million "; break;
+                  case '9': txt+="to'qqiz million "; break;
+                  default:  if(dd)
+                  {
+                      txt+="million ";
+                  }
+                      break;
+
+              }
+          }
+
+          dd=false;
+          //6xona
+          if(a.length()>=6)
+          {
+              switch (a.charAt(a.length()-6))
+              {
+                  case '1': txt+="bir yuz ";dd=true; break;
+                  case '2': txt+="ikki yuz ";dd=true; break;
+                  case '3': txt+="uch yuz ";dd=true; break;
+                  case '4': txt+="to'rt yuz ";dd=true; break;
+                  case '5': txt+="besh yuz ";dd=true; break;
+                  case '6': txt+="olti yuz ";dd=true; break;
+                  case '7': txt+="yetti yuz ";dd=true; break;
+                  case '8': txt+="sakkiz yuz ";dd=true; break;
+                  case '9': txt+="to'qqiz yuz ";dd=true; break;
+              }
+          }
+          //6-xona
+          if(a.length()>=5)
+          {
+              switch (a.charAt(a.length()-5))
+              {
+                  case '1': txt+="o’n ";dd=true; break;
+                  case '2': txt+="yigirma ";dd=true; break;
+                  case '3': txt+="o'ttiz ";dd=true; break;
+                  case '4': txt+="qirq ";dd=true; break;
+                  case '5': txt+="ellik ";dd=true; break;
+                  case '6': txt+="oltmish ";dd=true; break;
+                  case '7': txt+="yetmish ";dd=true; break;
+                  case '8': txt+="sakson ";dd=true; break;
+                  case '9': txt+="to'qson ";dd=true; break;
+              }
+          }
+          //5-xona
+
+          //4-xona
+          if(a.length()>=4)
+          {
+              switch (a.charAt(a.length()-4))
+              {
+                  case '1': txt+="bir ming "; break;
+                  case '2': txt+="ikki ming "; break;
+                  case '3': txt+="uch ming "; break;
+                  case '4': txt+="to'rt ming "; break;
+                  case '5': txt+="besh ming "; break;
+                  case '6': txt+="olti ming "; break;
+                  case '7': txt+="yetti ming "; break;
+                  case '8': txt+="sakkiz ming "; break;
+                  case '9': txt+="to'qqiz ming "; break;
+                  default:  if(dd)
+                  {
+                      txt+="ming ";
+                  }
+                      break;
+                  //  default: txt+="ming ";break;
+              }
+          }
+          //3-xona
+          if(a.length()>=3)
+          {
+              switch (a.charAt(a.length()-3))
+              {
+                  case '1': txt+="bir yuz "; break;
+                  case '2': txt+="ikki yuz "; break;
+                  case '3': txt+="uch yuz "; break;
+                  case '4': txt+="to'rt yuz "; break;
+                  case '5': txt+="besh yuz "; break;
+                  case '6': txt+="olti yuz "; break;
+                  case '7': txt+="yetti yuz "; break;
+                  case '8': txt+="sakkiz yuz "; break;
+                  case '9': txt+="to'qqiz yuz "; break;
+
+
+              }
+          }
+          //2-xona
+          if(a.length()>=2)
+          {
+              switch (a.charAt(a.length()-2))
+              {
+                  case '1': txt+="o'n "; break;
+                  case '2': txt+="yigirma "; break;
+                  case '3': txt+="o'ttiz "; break;
+                  case '4': txt+="qirq "; break;
+                  case '5': txt+="ellik "; break;
+                  case '6': txt+="oltmish "; break;
+                  case '7': txt+="yetmish "; break;
+                  case '8': txt+="sakson "; break;
+                  case '9': txt+="to'qson "; break;
+              }
+          }
+          //1 xona
+          if(a.length()>=1)
+          {
+              switch (a.charAt(a.length()-1))
+              {
+                  case '1': txt+="bir"; break;
+                  case '2': txt+="ikki"; break;
+                  case '3': txt+="uch"; break;
+                  case '4': txt+="to'rt"; break;
+                  case '5': txt+="besh"; break;
+                  case '6': txt+="olti"; break;
+                  case '7': txt+="yetti"; break;
+                  case '8': txt+="sakkiz"; break;
+                  case '9': txt+="to'qqiz"; break;
+              }
+          }
+          System.out.println(txt);
+
+      }
+
+    }
+}

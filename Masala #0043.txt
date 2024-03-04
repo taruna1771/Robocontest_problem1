@@ -1,0 +1,5 @@
+a,b=map(int,input().split())
+z=a
+a=b
+b=z
+print(a,b)

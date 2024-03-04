@@ -1,0 +1,7 @@
+a,b=map(int,input().split())
+p=(a+b)*2
+s=a*b
+if(p>s):
+    print(p)
+else:
+    print(s)

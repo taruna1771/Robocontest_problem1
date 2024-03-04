@@ -1,0 +1,9 @@
+string[] g = Console.ReadLine().Split();
+            Int64[] mas = new Int64[5];
+            for (int i = 0; i < 5; i++)
+            {
+                mas[i] = Convert.ToInt64(g[i]);
+            }
+            Array.Sort(mas);
+            Int64 min=mas[1]+mas[2]+mas[3]+mas[0] ,max=mas[1]+mas[2]+mas[3]+mas[4];
+            Console.WriteLine(min+" "+max);

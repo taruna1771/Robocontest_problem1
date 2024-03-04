@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+       String[] a=scan.nextLine().split(" ");
+       Long b= Long.parseLong(a[0]);
+       long z=Long.parseLong(a[1]);
+        System.out.println(b*z);
+    }
+
+}

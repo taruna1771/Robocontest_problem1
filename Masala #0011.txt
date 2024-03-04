@@ -1,0 +1,22 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        int las_max=0, max;
+        max = 0;
+        int z;
+        // Bo'sh qatorni o'qib tashlash
+        scan.nextLine();
+        String[] b = scan.nextLine().split(" ");
+        int[] gg=new int[b.length];
+        for (int i = 0; i < a; i++) {
+            gg[i] = Integer.parseInt(b[i]);
+        }
+        Arrays.sort(gg);
+
+        System.out.println(gg[gg.length-2]);
+    }
+}

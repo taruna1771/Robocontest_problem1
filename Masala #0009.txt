@@ -1,0 +1,17 @@
+int a = Convert.ToInt32(Console.ReadLine());
+            string[] b = Console.ReadLine().Split();
+            int[] mas = new int[a];
+            for (int i = 0; i < a; i++)
+            {
+                mas[i] = Convert.ToInt32(b[i]);
+            }
+            int sana;
+            for (int i = 0; i < a; i++)
+            {
+                sana = 0;
+                for (int j = 0; j < a; j++)
+                {
+                    if (mas[i] == mas[j]) { sana++; }
+                }
+                if (sana == 1) { Console.WriteLine(mas[i]); break; }
+            }

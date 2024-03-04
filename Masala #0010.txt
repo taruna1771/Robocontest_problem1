@@ -1,0 +1,5 @@
+Int64 a = Convert.ToInt64(Console.ReadLine());
+            string[] g = Console.ReadLine().Split();
+            Int64 b1 = Convert.ToInt64(g[0])+Convert.ToInt64(g[1])+Convert.ToInt64(g[2]);
+            if (b1 >= a) { Console.WriteLine("Yes"); }
+            else { Console.WriteLine("No"); }

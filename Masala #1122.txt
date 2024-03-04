@@ -1,0 +1,13 @@
+n=str(input())
+a=True
+if(len(n)%2==0):
+    a=False
+    print("NO")
+else:
+    for i in range(0,len(n)):
+        if(int(n[i])%2==0):
+            a=False
+            print("NO")
+            break
+if(a):
+    print("YES")
