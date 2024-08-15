@@ -1,0 +1,9 @@
+from datetime import date, timedelta
+
+year = int(input())
+
+initial_date = date(year, 1, 1)
+
+days_to_add = timedelta(days=255)
+new_date = initial_date + days_to_add
+print(f"{new_date.day:02d}/{new_date.month:02d}/{new_date.year:04d}")
